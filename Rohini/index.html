@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rohini M — Computer Science & Engineering Student at Adichunchanagiri Institute of Technology. Portfolio showcasing programming in C & Python, software development, and practical projects.">
+  <meta name="author" content="Rohini M">
+  <meta name="keywords" content="Rohini M, Computer Science, Engineering Student, Portfolio, C Programming, Python, Adichunchanagiri Institute of Technology">
+  <title>Rohini M — Computer Science & Engineering Student | Portfolio</title>
+
+  <!-- Google Fonts: Editorial Space Grotesk & Ultra-Clean Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- 1. NAVIGATION BAR                                         -->
+  <!-- Minimal fixed top navigation with logo, links, connect CTA -->
+  <!-- ========================================================= -->
+  <header id="site-header" class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Logo: Left -->
+      <a href="#hero" class="nav-logo" aria-label="Rohini M Portfolio Home">
+        <span class="logo-mark">RM</span>
+        <span class="logo-text">Rohini M</span>
+      </a>
+
+      <!-- Navigation Links: Center -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#ask-rohini" class="nav-link">Ask Rohini</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions: Right -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (Light / Dark) -->
+        <button 
+          id="theme-toggle" 
+          class="theme-toggle-btn" 
+          type="button" 
+          aria-label="Toggle light and dark mode" 
+          title="Toggle color theme"
+        >
+          <!-- Moon Icon (for light mode -> switch to dark) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (for dark mode -> switch to light) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Let's Connect CTA Button -->
+        <a href="#contact" class="btn btn-connect">
+          <span>Let's Connect</span>
+          <span class="btn-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button 
+          id="mobile-nav-toggle" 
+          class="mobile-nav-toggle" 
+          type="button" 
+          aria-label="Toggle navigation menu" 
+          aria-expanded="false" 
+          aria-controls="nav-menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT                                              -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ========================================================= -->
+    <!-- 2. HERO SECTION                                           -->
+    <!-- Full-screen editorial 2-column layout with portrait       -->
+    <!-- ========================================================= -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-container">
+        
+        <!-- Left Column: Editorial Headline & Bio -->
+        <div class="hero-left reveal-element">
+          
+          <div class="hero-tag-wrapper">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="hero-tag">COMPUTER SCIENCE &amp; ENGINEERING STUDENT</span>
+          </div>
+
+          <h1 id="hero-heading" class="hero-title">
+            Hello,<br>
+            I'm <span class="hero-name">Rohini.</span>
+          </h1>
+
+          <p class="hero-description">
+            I'm a Computer Science and Engineering student passionate about programming, software development and building practical projects.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <span class="btn-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Profile Portrait & Scroll Indicator -->
+        <div class="hero-right reveal-element">
+          <div class="portrait-wrapper">
+            <div class="portrait-frame">
+              <img 
+                src="assets/rohini-portrait.jpg" 
+                alt="Portrait photograph of Rohini M, Computer Science & Engineering student" 
+                class="portrait-img"
+                width="600"
+                height="800"
+                loading="eager"
+              >
+              <div class="portrait-caption">
+                <span class="caption-title">Rohini M</span>
+                <span class="caption-sub">AIT Chikkamagaluru • 3rd Sem</span>
+              </div>
+            </div>
+
+            <!-- Subtle Vertical Scroll Label -->
+            <a href="#hero-info" class="scroll-label" aria-label="Scroll down to explore portfolio">
+              <span>SCROLL TO EXPLORE</span>
+              <span class="scroll-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ========================================================= -->
+      <!-- 3. HERO INFORMATION                                       -->
+      <!-- Minimal, authentic statistics & status area below hero    -->
+      <!-- ========================================================= -->
+      <div id="hero-info" class="hero-info-bar">
+        <div class="hero-info-container">
+          
+          <div class="info-card">
+            <span class="info-metric">3rd Semester</span>
+            <span class="info-label">Computer Science &amp; Engineering</span>
+          </div>
+
+          <div class="info-divider" aria-hidden="true"></div>
+
+          <div class="info-card">
+            <span class="info-metric">C / Python</span>
+            <span class="info-label">Programming</span>
+          </div>
+
+          <div class="info-divider" aria-hidden="true"></div>
+
+          <div class="info-card">
+            <span class="info-metric">Student</span>
+            <span class="info-label">Adichunchanagiri Institute of Technology</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 4. ABOUT ME                                               -->
+    <!-- Spacious two-column layout with background & journey link  -->
+    <!-- ========================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-element">
+          <span class="section-number">01 / BACKGROUND</span>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Biography & Narrative -->
+          <div class="about-text-column reveal-element">
+            <p class="about-lead">
+              I'm Rohini M, a Computer Science and Engineering student at Adichunchanagiri Institute of Technology. I am currently in my 3rd semester.
+            </p>
+
+            <p class="about-body">
+              I have learned C programming and Python and I am interested in software development, programming and creating practical projects. I enjoy learning new technologies and improving my problem-solving skills through hands-on projects.
+            </p>
+
+            <div class="about-keypoints">
+              <div class="keypoint-item">
+                <span class="keypoint-bullet" aria-hidden="true"></span>
+                <div>
+                  <strong>Academic Focus:</strong> Core computer science foundations, algorithms, data structures, and computer organization.
+                </div>
+              </div>
+              <div class="keypoint-item">
+                <span class="keypoint-bullet" aria-hidden="true"></span>
+                <div>
+                  <strong>Practical Orientation:</strong> Turning conceptual programming knowledge into functional applications like quiz engines and automated smart monitoring systems.
+                </div>
+              </div>
+            </div>
+
+            <div class="about-action">
+              <a href="#education" class="journey-link">
+                <span>My Journey</span>
+                <span class="link-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Element / Editorial Card -->
+          <div class="about-visual-column reveal-element">
+            <div class="about-card">
+              <div class="about-card-badge">PROFILE OVERVIEW</div>
+              <div class="about-card-content">
+                <div class="profile-meta-row">
+                  <span class="meta-label">Full Name</span>
+                  <span class="meta-value">Rohini M</span>
+                </div>
+                <div class="profile-meta-row">
+                  <span class="meta-label">Discipline</span>
+                  <span class="meta-value">Computer Science &amp; Engineering</span>
+                </div>
+                <div class="profile-meta-row">
+                  <span class="meta-label">Institution</span>
+                  <span class="meta-value">Adichunchanagiri Institute of Technology</span>
+                </div>
+                <div class="profile-meta-row">
+                  <span class="meta-label">Current Academic Level</span>
+                  <span class="meta-value">Bachelor of Engineering (3rd Semester)</span>
+                </div>
+                <div class="profile-meta-row">
+                  <span class="meta-label">Primary Languages</span>
+                  <span class="meta-value">C, Python</span>
+                </div>
+                <div class="profile-meta-row">
+                  <span class="meta-label">Interests</span>
+                  <span class="meta-value">Software Development &amp; Problem Solving</span>
+                </div>
+              </div>
+              <div class="about-card-footer">
+                <span class="badge-status">
+                  <span class="pulse-dot"></span> Active Student &amp; Developer
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 5. SKILLS & TECHNOLOGIES                                  -->
+    <!-- Clean grid, monochrome icons, no exaggerated percent bars  -->
+    <!-- ========================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-header reveal-element">
+          <span class="section-number">02 / CAPABILITIES</span>
+          <h2 id="skills-heading" class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtext">Foundational competencies and technical disciplines I actively apply in projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming -->
+          <div class="skill-category-card reveal-element">
+            <div class="category-header">
+              <span class="category-tag">CATEGORY 01</span>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            
+            <div class="skill-items-list">
+              
+              <!-- C Programming -->
+              <div class="skill-item">
+                <div class="skill-icon-box" aria-hidden="true">
+                  <!-- C Logo SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M16 6a8 8 0 1 0 0 12"></path>
+                    <path d="M12 9v6"></path>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">C Programming</h4>
+                  <p class="skill-desc">Memory management, pointers, control flow, functions, and algorithmic data structures.</p>
+                </div>
+              </div>
+
+              <!-- Python -->
+              <div class="skill-item">
+                <div class="skill-icon-box" aria-hidden="true">
+                  <!-- Python Monoline SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 2C8 2 8 3.5 8 5v2h5v1H6c-2 0-4 1-4 4s2 4 4 4h1v-2c0-2 1-3 3-3h5v-2H9V7c0-1.5 1-3 3-3h2c2 0 3-1 3-2s-1-2-3-2h-2z"></path>
+                    <path d="M12 22c4 0 4-1.5 4-3v-2h-5v-1h7c2 0 4-1 4-4s-2-4-4-4h-1v2c0 2-1 3-3 3h-5v2h6v2c0 1.5-1 3-3 3h-2c-2 0-3 1-3 2s1 2 3 2h2z"></path>
+                    <circle cx="10" cy="5" r="0.8" fill="currentColor"></circle>
+                    <circle cx="14" cy="19" r="0.8" fill="currentColor"></circle>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Python</h4>
+                  <p class="skill-desc">Scripting, object-oriented concepts, automation logic, modular programming, and data handling.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card reveal-element">
+            <div class="category-header">
+              <span class="category-tag">CATEGORY 02</span>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+
+            <div class="skill-items-list">
+              
+              <!-- HTML -->
+              <div class="skill-item">
+                <div class="skill-icon-box" aria-hidden="true">
+                  <!-- HTML Code Tag SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                    <line x1="14" y1="4" x2="10" y2="20"></line>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">HTML</h4>
+                  <p class="skill-desc">Semantic document structuring, forms, accessible markup, and content hierarchy.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Other Core Competencies -->
+          <div class="skill-category-card reveal-element">
+            <div class="category-header">
+              <span class="category-tag">CATEGORY 03</span>
+              <h3 class="category-title">Engineering Core</h3>
+            </div>
+
+            <div class="skill-items-list">
+              
+              <!-- Problem Solving -->
+              <div class="skill-item">
+                <div class="skill-icon-box" aria-hidden="true">
+                  <!-- Problem Solving / Logic SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4.5 3 6v2h8v-2c1.5-1.5 3-3.5 3-6a7 7 0 0 0-7-7z"></path>
+                    <line x1="9" y1="21" x2="15" y2="21"></line>
+                    <line x1="10" y1="17" x2="14" y2="17"></line>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Problem Solving</h4>
+                  <p class="skill-desc">Breaking down complex requirements into algorithmic steps, debugging, and testing edge cases.</p>
+                </div>
+              </div>
+
+              <!-- Software Development -->
+              <div class="skill-item">
+                <div class="skill-icon-box" aria-hidden="true">
+                  <!-- Software Dev / Layers SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Software Development</h4>
+                  <p class="skill-desc">Understanding software life cycles, writing clean readable code, and modular application design.</p>
+                </div>
+              </div>
+
+              <!-- Project Development -->
+              <div class="skill-item">
+                <div class="skill-icon-box" aria-hidden="true">
+                  <!-- Project / Compass SVG -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Project Development</h4>
+                  <p class="skill-desc">End-to-end planning, requirement definition, testing, and implementation of practical software systems.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 6. EDUCATION                                              -->
+    <!-- Clean timeline with thin vertical line & future slot      -->
+    <!-- ========================================================= -->
+    <section id="education" class="section education-section" aria-labelledby="education-heading">
+      <div class="container">
+
+        <div class="section-header reveal-element">
+          <span class="section-number">03 / ACADEMICS</span>
+          <h2 id="education-heading" class="section-title">Education</h2>
+          <p class="section-subtext">Academic progression and formal studies in Computer Science and Engineering.</p>
+        </div>
+
+        <div class="education-timeline-wrapper reveal-element">
+          <div class="timeline-track" aria-hidden="true"></div>
+
+          <div class="timeline-items">
+            
+            <!-- Current Degree Item -->
+            <div class="timeline-entry">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-inner"></span>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-period">2026 — Present</div>
+                <h3 class="timeline-degree">Bachelor of Engineering</h3>
+                <h4 class="timeline-major">Computer Science &amp; Engineering</h4>
+                <div class="timeline-institution">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                  </svg>
+                  <span>Adichunchanagiri Institute of Technology</span>
+                </div>
+                <div class="timeline-badge-group">
+                  <span class="pill-badge">3rd Semester</span>
+                  <span class="pill-badge pill-badge-outline">Undergraduate Program</span>
+                </div>
+                <p class="timeline-notes">
+                  Focusing on core engineering fundamentals, algorithms, system concepts, and building practical programming projects.
+                </p>
+              </div>
+            </div>
+
+            <!-- Future Milestones Placeholder Card -->
+            <div class="timeline-entry timeline-entry-placeholder">
+              <div class="timeline-node timeline-node-future" aria-hidden="true">
+                <span class="node-inner-future"></span>
+              </div>
+              <div class="timeline-card placeholder-card">
+                <div class="timeline-period">Upcoming Milestones</div>
+                <h3 class="timeline-degree placeholder-text">[Add Future Milestone / Graduation]</h3>
+                <p class="placeholder-desc">
+                  Space reserved for future academic achievements, certifications, and higher studies milestones.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 7. SELECTED PROJECTS                                      -->
+    <!-- Large editorial showcase with images and detail trigger   -->
+    <!-- ========================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-header reveal-element">
+          <span class="section-number">04 / WORK</span>
+          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+          <p class="section-subtext">Hands-on applications demonstrating software design, algorithms, and automated control.</p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 01: ONLINE QUIZ SYSTEM -->
+          <article class="project-showcase-card reveal-element" id="project-card-quiz">
+            <div class="project-card-layout">
+              
+              <!-- Card Information -->
+              <div class="project-info-pane">
+                <div class="project-meta-top">
+                  <span class="project-index">PROJECT 01</span>
+                  <span class="project-category-tag">Software Application</span>
+                </div>
+
+                <h3 class="project-heading">ONLINE QUIZ SYSTEM</h3>
+
+                <p class="project-summary">
+                  An interactive online quiz system developed as a software project. It provides a structured quiz experience and helped me apply programming concepts and software development skills.
+                </p>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">C</span>
+                  <span class="tech-pill">HTML</span>
+                </div>
+
+                <div class="project-actions">
+                  <button 
+                    type="button" 
+                    class="btn btn-primary project-modal-trigger" 
+                    data-project="quiz"
+                    aria-haspopup="dialog"
+                    aria-controls="project-modal"
+                  >
+                    <span>View Project</span>
+                    <span class="btn-arrow" aria-hidden="true">↗</span>
+                  </button>
+                  <a 
+                    href="https://github.com/RohiniM2006" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-outline"
+                    aria-label="View Rohini M's GitHub Profile"
+                  >
+                    <span>GitHub Profile</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card Visual Preview -->
+              <div class="project-visual-pane">
+                <div class="project-image-box">
+                  <img 
+                    src="assets/project-quiz.jpg" 
+                    alt="Online Quiz System user interface preview showing question progress, code snippet, and scoring controls" 
+                    class="project-img"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                  >
+                  <div class="image-overlay-badge">Interactive Software System</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 02: GREENHOUSE MONITORING AND CONTROL SYSTEM -->
+          <article class="project-showcase-card reveal-element" id="project-card-greenhouse">
+            <div class="project-card-layout project-card-reverse">
+              
+              <!-- Card Information -->
+              <div class="project-info-pane">
+                <div class="project-meta-top">
+                  <span class="project-index">PROJECT 02</span>
+                  <span class="project-category-tag">Smart Automation System</span>
+                </div>
+
+                <h3 class="project-heading">GREENHOUSE MONITORING AND CONTROL SYSTEM</h3>
+
+                <p class="project-summary">
+                  A smart greenhouse project designed to monitor temperature, humidity, soil moisture and light while automatically controlling devices such as water pumps, fans and lights.
+                </p>
+
+                <!-- Features Highlight List as explicitly requested -->
+                <div class="project-features-list">
+                  <h4 class="features-subheading">Core Capabilities:</h4>
+                  <ul class="features-grid">
+                    <li><span class="feature-bullet">•</span> Temperature monitoring</li>
+                    <li><span class="feature-bullet">•</span> Humidity monitoring</li>
+                    <li><span class="feature-bullet">•</span> Soil moisture monitoring</li>
+                    <li><span class="feature-bullet">•</span> Light monitoring</li>
+                    <li><span class="feature-bullet">•</span> Automatic water pump control</li>
+                    <li><span class="feature-bullet">•</span> Fan control</li>
+                    <li><span class="feature-bullet">•</span> Smart greenhouse management</li>
+                  </ul>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">C</span>
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">IoT Automation</span>
+                </div>
+
+                <div class="project-actions">
+                  <button 
+                    type="button" 
+                    class="btn btn-primary project-modal-trigger" 
+                    data-project="greenhouse"
+                    aria-haspopup="dialog"
+                    aria-controls="project-modal"
+                  >
+                    <span>View Project</span>
+                    <span class="btn-arrow" aria-hidden="true">↗</span>
+                  </button>
+                  <a 
+                    href="https://github.com/RohiniM2006" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-outline"
+                    aria-label="View Rohini M's GitHub Profile"
+                  >
+                    <span>GitHub Profile</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card Visual Preview -->
+              <div class="project-visual-pane">
+                <div class="project-image-box">
+                  <img 
+                    src="assets/project-greenhouse.jpg" 
+                    alt="Greenhouse Monitoring and Control System dashboard with sensor telemetry gauges and actuator switches" 
+                    class="project-img"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                  >
+                  <div class="image-overlay-badge">Automated Sensor &amp; Actuator Control</div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 8. PROJECT DETAILS MODAL                                  -->
+    <!-- Full accessible overlay with tabs/sections for deep dive  -->
+    <!-- ========================================================= -->
+    <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-header-meta">
+            <span id="modal-project-tag" class="modal-tag">PROJECT DEEP DIVE</span>
+            <h3 id="modal-project-title" class="modal-title">Project Details</h3>
+          </div>
+          <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project details dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal-body" id="modal-project-content">
+          <!-- Content injected dynamically via script.js -->
+        </div>
+
+        <div class="modal-footer">
+          <a href="https://github.com/RohiniM2006" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-github-link">
+            <span>Explore on GitHub</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+          <button type="button" class="btn btn-secondary" id="modal-dismiss-btn">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- 9. CURRENTLY LEARNING                                     -->
+    <!-- Minimal section displaying continuous learning mindset    -->
+    <!-- ========================================================= -->
+    <section class="section learning-section" aria-labelledby="learning-heading">
+      <div class="container">
+        
+        <div class="section-header reveal-element">
+          <span class="section-number">05 / HORIZONS</span>
+          <h2 id="learning-heading" class="section-title">Currently Learning</h2>
+        </div>
+
+        <div class="learning-container reveal-element">
+          
+          <div class="learning-pills-grid">
+            <div class="learning-pill">
+              <span class="learning-icon">✦</span>
+              <span class="learning-text">C Programming</span>
+            </div>
+            <div class="learning-pill">
+              <span class="learning-icon">✦</span>
+              <span class="learning-text">Python</span>
+            </div>
+            <div class="learning-pill">
+              <span class="learning-icon">✦</span>
+              <span class="learning-text">Web Development</span>
+            </div>
+            <div class="learning-pill">
+              <span class="learning-icon">✦</span>
+              <span class="learning-text">Software Development</span>
+            </div>
+            <div class="learning-pill">
+              <span class="learning-icon">✦</span>
+              <span class="learning-text">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="learning-quote-box">
+            <p class="learning-statement">“Always learning. Always building.”</p>
+            <span class="learning-sub">— Rohini M • Continuous Student Growth Mindset</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 10. ACHIEVEMENTS & MILESTONES                             -->
+    <!-- Truthful, elegant placeholder as explicitly instructed     -->
+    <!-- ========================================================= -->
+    <section class="section achievements-section" aria-labelledby="achievements-heading">
+      <div class="container">
+
+        <div class="section-header reveal-element">
+          <span class="section-number">06 / RECOGNITION</span>
+          <h2 id="achievements-heading" class="section-title">Achievements</h2>
+        </div>
+
+        <div class="achievements-card reveal-element">
+          <div class="achievements-status-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <h3 class="achievements-message">More milestones coming soon.</h3>
+          <p class="achievements-sub">
+            As I progress through my engineering journey, hackathons, academic achievements, and technical certifications will be documented here.
+          </p>
+
+          <div class="placeholder-badges-group">
+            <span class="placeholder-pill">[Add Certificate]</span>
+            <span class="placeholder-pill">[Add Achievement]</span>
+            <span class="placeholder-pill">[Add Internship]</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 12. AI CHAT: "ASK ROHINI"                                 -->
+    <!-- Minimal simulated chat interface with AI API hook ready   -->
+    <!-- ========================================================= -->
+    <section id="ask-rohini" class="section ai-chat-section" aria-labelledby="chat-heading">
+      <div class="container">
+
+        <div class="section-header reveal-element">
+          <span class="section-number">07 / INTERACTIVE</span>
+          <h2 id="chat-heading" class="section-title">Ask Rohini</h2>
+          <p class="section-subtext">Have a quick question about my studies, skills, projects, or background? Ask below.</p>
+        </div>
+
+        <div class="chat-container reveal-element">
+          
+          <!-- Chat Window Header -->
+          <div class="chat-window-header">
+            <div class="chat-header-info">
+              <span class="chat-avatar" aria-hidden="true">RM</span>
+              <div>
+                <h3 class="chat-agent-title">Rohini Portfolio Assistant</h3>
+                <span class="chat-agent-status">
+                  <span class="chat-online-indicator"></span> Interactive Portfolio Assistant
+                </span>
+              </div>
+            </div>
+            <button type="button" class="chat-reset-btn" id="chat-reset-btn" title="Reset conversation" aria-label="Reset chat history">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+              </svg>
+              <span>Reset</span>
+            </button>
+          </div>
+
+          <!-- Suggested Quick Prompts -->
+          <div class="chat-suggestions-bar" aria-label="Suggested questions">
+            <span class="suggestion-label">Suggested:</span>
+            <button type="button" class="suggestion-pill" data-prompt="What projects have you built?">What projects have you built?</button>
+            <button type="button" class="suggestion-pill" data-prompt="What are your core programming skills?">Core programming skills</button>
+            <button type="button" class="suggestion-pill" data-prompt="Which college are you studying at?">College &amp; Semester</button>
+            <button type="button" class="suggestion-pill" data-prompt="How can I get in touch with you?">How to contact</button>
+          </div>
+
+          <!-- Message History Window -->
+          <div class="chat-messages-scroll" id="chat-messages" role="log" aria-live="polite">
+            
+            <div class="chat-message bot-message">
+              <div class="message-meta">
+                <span class="sender-name">Rohini M (Assistant)</span>
+                <span class="message-time">Just now</span>
+              </div>
+              <div class="message-bubble">
+                Hello! I can answer questions about my engineering studies at Adichunchanagiri Institute of Technology, my skills in C and Python, and my projects like the Online Quiz System and Smart Greenhouse. What would you like to know?
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Chat Input Form -->
+          <form id="chat-form" class="chat-input-form" action="#" method="GET">
+            <label for="chat-user-input" class="visually-hidden">Ask a question about Rohini</label>
+            <input 
+              type="text" 
+              id="chat-user-input" 
+              class="chat-input" 
+              placeholder="Ask about Rohini, education, projects, skills..." 
+              autocomplete="off" 
+              required
+            >
+            <button type="submit" class="btn btn-primary chat-send-btn" aria-label="Send query">
+              <span>Ask</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+
+          <div class="chat-disclaimer">
+            <span>Simulated assistant strictly responding with verified information from Rohini M's portfolio profile.</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 13. CONTACT                                               -->
+    <!-- Large editorial contact section with verified links & form -->
+    <!-- ========================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-header reveal-element">
+          <span class="section-number">08 / REACH OUT</span>
+          <h2 id="contact-heading" class="section-title">Let's Connect.</h2>
+          <p class="section-subtext">Have a project idea, opportunity or simply want to connect? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Direct Links & Info -->
+          <div class="contact-info-column reveal-element">
+            
+            <p class="contact-narrative">
+              I am always keen to collaborate on software projects, discuss programming concepts, and explore development opportunities.
+            </p>
+
+            <div class="contact-channels">
+              
+              <!-- Email Card with Copy Feature -->
+              <div class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Direct Email</span>
+                  <a href="mailto:rohinim02082006@gmail.com" class="channel-link" id="email-text">rohinim02082006@gmail.com</a>
+                </div>
+                <button type="button" class="copy-email-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                  <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn Link -->
+              <a href="https://www.linkedin.com/in/rohini-m-847885397" target="_blank" rel="noopener noreferrer" class="channel-card channel-card-link">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <span class="channel-link">linkedin.com/in/rohini-m-847885397</span>
+                </div>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+
+              <!-- GitHub Link -->
+              <a href="https://github.com/RohiniM2006" target="_blank" rel="noopener noreferrer" class="channel-card channel-card-link">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub Repository</span>
+                  <span class="channel-link">github.com/RohiniM2006</span>
+                </div>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Right Column: Minimal Form -->
+          <div class="contact-form-column reveal-element">
+            <div class="form-wrapper">
+              
+              <form id="contact-form" class="editorial-form" action="#" method="POST" novalidate>
+                
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Name <span class="required">*</span></label>
+                  <input 
+                    type="text" 
+                    id="form-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="Your Full Name" 
+                    required
+                  >
+                  <span class="field-error" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email <span class="required">*</span></label>
+                  <input 
+                    type="email" 
+                    id="form-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="your.email@example.com" 
+                    required
+                  >
+                  <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea 
+                    id="form-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="5" 
+                    placeholder="Describe your project idea, message, or question..." 
+                    required
+                  ></textarea>
+                  <span class="field-error" id="message-error">Please enter your message.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                  <span>Send Message</span>
+                  <span class="btn-arrow" aria-hidden="true">↗</span>
+                </button>
+
+              </form>
+
+              <div id="form-success-banner" class="form-success-banner" hidden>
+                <div class="banner-icon" aria-hidden="true">✓</div>
+                <div>
+                  <strong>Thank you for reaching out!</strong>
+                  <p>Your message has been received. I will reply to you as soon as possible.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- 14. FOOTER                                                -->
+  <!-- Minimal clean footer with copyright, links, and top link  -->
+  <!-- ========================================================= -->
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <div class="footer-left">
+        <div class="footer-logo">RM</div>
+        <p class="footer-copy">&copy; 2026 Rohini M</p>
+        <p class="footer-tagline">Designed &amp; Built by Rohini M</p>
+      </div>
+
+      <div class="footer-center">
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="https://www.linkedin.com/in/rohini-m-847885397" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          <a href="https://github.com/RohiniM2006" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <a href="mailto:rohinim02082006@gmail.com" class="footer-link">Email</a>
+        </nav>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" aria-label="Return to top of page">
+          <span>Back to Top</span>
+          <span class="btn-arrow-up" aria-hidden="true">↑</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js" defer></script>
+</body>
+</html>
